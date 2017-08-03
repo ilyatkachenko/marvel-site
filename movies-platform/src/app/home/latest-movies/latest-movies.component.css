@@ -1,0 +1,93 @@
+.movies {
+  display: block;
+  position: relative;
+  padding: 40px 0;
+  overflow: hidden;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center bottom; }
+  .movies:before {
+    content: '';
+    background-color: rgba(147, 94, 206, 0.25);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .movies__title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 40px; }
+  .movies .movie {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    box-shadow: 0 10px 6px -6px #615675; }
+    .movies .movie.active {
+      opacity: 1; }
+    .movies .movie:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: opacity 0.3s ease-in-out; }
+    .movies .movie__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto; }
+    .movies .movie__title {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      display: block;
+      width: 100%;
+      padding: 0 20px;
+      z-index: 2;
+      font-size: 30px;
+      font-weight: 400;
+      font-style: normal;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      transition: opacity 0.3s ease-in-out; }
+    .movies .movie:hover:before {
+      opacity: 1; }
+    .movies .movie:hover .movie__title {
+      opacity: 1; }
+  .movies .button {
+    display: table;
+    margin: 30px auto;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fff; }
+    .movies .button:after {
+      background-color: rebeccapurple; }
+    .movies .button:hover {
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      color: #000;
+      font-family: 'Oswald', sans-serif; }
+
+/*# sourceMappingURL=latest-movies.component.css.map */

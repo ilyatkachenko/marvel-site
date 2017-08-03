@@ -1,0 +1,111 @@
+@mixin font($size:16px,$weight:400,$style:normal,$color:#000) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+  font-family: 'Oswald', sans-serif;
+}
+
+.movies {
+  display: block;
+  position: relative;
+  padding: 40px 0;
+  overflow: hidden;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center bottom;
+
+  &:before {
+    content: '';
+    background-color: rgba(147, 94, 206, 0.25);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    margin: 0;
+    @include font(50px, 400, normal, #fff);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .movie {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    box-shadow: 0 10px 6px -6px #615675;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    &__title {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      display: block;
+      width: 100%;
+      padding: 0 20px;
+      z-index: 2;
+      @include font(30px, 400, normal, #fff);
+      text-align: center;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+
+      &:before {
+        opacity: 1;
+      }
+
+      .movie__title {
+        opacity: 1;
+      }
+    }
+  }
+
+  .button {
+    display: table;
+    margin: 30px auto;
+    @include font(24px, 400, normal, #000);
+    background-color: #fff;
+
+    &:after {
+      background-color: rebeccapurple;
+    }
+
+    &:hover {
+      @include font(24px, 400, normal, #000);
+    }
+  }
+}

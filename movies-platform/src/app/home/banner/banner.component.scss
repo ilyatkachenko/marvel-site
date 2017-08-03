@@ -1,0 +1,81 @@
+@mixin font($size:16px,$weight:400,$style:normal,$color:#000) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+  font-family: 'Oswald', sans-serif;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.banner{
+  display: block;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+
+  &__text{
+    position: absolute;
+    top: 30%;
+    left: 20vw;
+    width: 30vw;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__title{
+    display: block;
+    @include font(50px,400,normal,#fff);
+    margin: 0 0 15px;
+  }
+
+  &__desc{
+    display: block;
+    @include font(30px,400,normal,#fff);
+  }
+
+  &__scroll{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    background-color: transparent;
+    border: 0;
+
+    img{
+      width: 100%;
+
+      &:hover{
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-name: bounce;
+        transform-origin: center bottom;
+      }
+    }
+  }
+}

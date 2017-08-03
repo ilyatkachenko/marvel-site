@@ -1,0 +1,64 @@
+.header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: #0b3354;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7); }
+  .header__logo {
+    float: left;
+    width: 100%;
+    height: auto; }
+  .header .menu {
+    display: flex;
+    height: 106px;
+    flex-direction: row;
+    justify-content: space-around; }
+    .header .menu__item {
+      align-self: center;
+      color: red;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase; }
+      .header .menu__item.button {
+        background-color: #1c1c21;
+        border-color: #676767; }
+  .header #turn-off {
+    position: absolute;
+    top: 34px;
+    right: -15px;
+    border: 0;
+    background-color: transparent;
+    width: 55px;
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+    background: url("../../assets/img/mute.png") no-repeat;
+    background-size: contain;
+    transition: all 0.2s ease-in-out; }
+    .header #turn-off.active {
+      z-index: 2;
+      opacity: 1; }
+  .header #turn-on {
+    position: absolute;
+    top: 34px;
+    right: -15px;
+    border: 0;
+    background-color: transparent;
+    width: 55px;
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+    background: url("../../assets/img/music.png") no-repeat;
+    background-size: contain;
+    transition: all 0.2s ease-in-out; }
+    .header #turn-on.active {
+      z-index: 2;
+      opacity: 1; }
+
+/*# sourceMappingURL=header.component.css.map */
