@@ -18,6 +18,7 @@ import { BannerComponent } from './home/banner/banner.component';
 import { LatestComicsComponent } from './home/latest-comics/latest-comics.component';
 import { LatestMoviesComponent } from './home/latest-movies/latest-movies.component';
 import { LatestVideosComponent } from './home/latest-videos/latest-videos.component';
+import { YoutubePipe } from './youtube.pipe';
 
 const appRoutes: Routes = [
   { path: 'comics', component: ComicsComponent },
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     BannerComponent,
     LatestComicsComponent,
     LatestMoviesComponent,
-    LatestVideosComponent
+    LatestVideosComponent,
+    YoutubePipe
   ],
   imports: [
     BrowserModule,
