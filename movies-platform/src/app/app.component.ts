@@ -1,5 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { DataService } from "./data.service";
+import { Component } from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
 
 @Component({
@@ -21,11 +20,8 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
         animate('0.3s ease-in-out')
       ])
     ]),
-  ],
-  providers: [DataService]
+  ]
 })
 export class AppComponent {
-  constructor(private _navService:DataService) {}
-  ngOnInit() {}
-
+  constructor() {}
 }

@@ -1,0 +1,21 @@
+{
+  "title": [
+    {
+      "text": "Фильмы про мстителей"
+    }
+  ],
+  "movies": [
+    {
+      "title": "Avengers 1",
+      "img": "../assets/img/movies1.jpg"
+    },
+    {
+      "title": "Avengers 2",
+      "img": "../assets/img/movies2.jpg"
+    },
+    {
+      "title": "Avengers 3",
+      "img": "../assets/img/movies3.jpg"
+    }
+  ]
+}

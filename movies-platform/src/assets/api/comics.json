@@ -1,0 +1,21 @@
+{
+  "title": [
+    {
+      "text": "Комиксы про мстителей"
+    }
+  ],
+  "comics": [
+    {
+      "title": "Avengers Assemble #08: Spring Break (Part 3):",
+      "img": "../assets/img/comics1.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #02",
+      "img": "../assets/img/comics2.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #04",
+      "img": "../assets/img/comics3.jpeg"
+    }
+  ]
+}

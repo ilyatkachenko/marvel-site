@@ -1,25 +1,13 @@
 <section class="movies" [ngStyle]="{'background-image': 'url(../../assets/img/comics-bg.gif)'}" id="latest-movies">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-12">
-        <h2 class="movies__title">Фильмы про мстителей</h2>
+      <div class="col-lg-12 col-md-12 col-xs-12" *ngFor="let movies of (promiseMovies | async)?.title">
+        <h2 class="movies__title">{{movies.text}}</h2>
       </div>
-      <div class="col-lg-4 col-md-4 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-xs-12" *ngFor="let element of (promiseMovies | async)?.movies">
         <div class="movie">
-          <h3 class="movie__title">Avengers 1</h3>
-          <img src="../assets/img/movies1.jpg" alt="" class="movie__img">
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-12">
-        <div class="movie">
-          <h3 class="movie__title">Avengers 2</h3>
-          <img src="../assets/img/movies2.jpg" alt="" class="movie__img">
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-12">
-        <div class="movie">
-          <h3 class="movie__title">Avengers 3</h3>
-          <img src="../assets/img/movies3.jpg" alt="" class="movie__img">
+          <h3 class="movie__title">{{element.title}}</h3>
+          <img src="{{element.img}}" alt="" class="movie__img">
         </div>
       </div>
       <div class="col-lg-12 col-md-12 col-xs-12">

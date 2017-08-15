@@ -1,7 +1,7 @@
-<section id="banner" class="banner" [ngStyle]="{'background-image': 'url(../../assets/img/bg.jpg)'}">
-  <div class="banner__text" [@fadeInUp]="'in'">
-    <h1 class="banner__title">Добро пожаловать на сайт Мстителей</h1>
-    <span class="banner__desc">Сдесь вы получите любую информацию о героях, комиксах, фильмах и видео.</span>
+<section id="banner" class="banner">
+  <div class="banner__text" [@fadeInUp]="'in'" *ngFor="let banner of promiseBanner | async">
+    <h1 class="banner__title">{{banner.title}}</h1>
+    <span class="banner__desc">{{banner.description}}</span>
   </div>
   <button scrollTo scrollTargetSelector="#latest-comics" class="banner__scroll"><img src="../../assets/img/arrow.png" alt=""></button>
 </section>
