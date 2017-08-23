@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
-import { Http, Response } from '@angular/http';
-import 'rxjs/add/operator/toPromise';
+import { ComicsService } from '../../services/comics/comics.service';
+import {Comics} from "../../services/comics/comics.service";
 
 @Component({
   selector: 'app-latest-comics',
@@ -9,35 +9,18 @@ import 'rxjs/add/operator/toPromise';
   styleUrls: ['./latest-comics.component.scss']
 })
 export class LatestComicsComponent implements OnInit {
-  url = "../assets/api/comics.json";
+
   promiseComics: Promise<Comics[]>;
   comics: Comics[];
   errorMessage: String;
 
-  constructor(@Inject(DOCUMENT) private document: Document, private http:Http) { }
-
-  getComicsWithPromise(): Promise<Comics[]> {
-    return this.http.get(this.url).toPromise()
-        .then(this.extractData)
-        .catch(this.handleErrorPromise);
-  }
-
-  private extractData(res: Response) {
-    let body = res.json();
-    return body;
-  }
-
-  private handleErrorPromise (error: Response | any) {
-    console.error(error.message || error);
-    return Promise.reject(error.message || error);
-  }
+  constructor(@Inject(DOCUMENT) private document: Document, private ComicsService: ComicsService) { }
 
   ngOnInit(): void {
-    this.promiseComics = this.getComicsWithPromise();
+    this.promiseComics = this.ComicsService.getComicsWithPromise();
     this.promiseComics.then(
         comics => this.comics = comics,
         error =>  this.errorMessage = <any>error);
-    console.log(this.promiseComics);
   }
 
   @HostListener("window:scroll", [])
@@ -50,13 +33,6 @@ export class LatestComicsComponent implements OnInit {
         elements[i].classList.add('active');
       }
     }
-  }
-}
-
-export class Comics {
-  title: string;
-  comics: string;
-  constructor() {
   }
 }
 

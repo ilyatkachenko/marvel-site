@@ -1,0 +1,42 @@
+{
+  "heroes" : [
+    {
+      "name" : "hawk",
+      "title" : "Hawkeye",
+      "img" : "../assets/img/pic4.jpeg",
+      "icon" : "../assets/img/hawk1.png"
+    },
+    {
+      "name" : "hulk",
+      "title" : "Hulk",
+      "img" : "../assets/img/pic6.jpeg",
+      "icon" : "../assets/img/hulk1.png"
+    },
+    {
+      "name" : "captain",
+      "title" : "Captain America",
+      "img" : "../assets/img/pic5.jpeg",
+      "icon" : "../assets/img/captain1.png"
+    },
+    {
+      "name" : "black-widow",
+      "title" : "Black Widow",
+      "img" : "../assets/img/pic1.jpeg",
+      "icon" : "../assets/img/woman1.png"
+    },
+    {
+      "name" : "iron-man",
+      "title" : "Iron man",
+      "img" : "../assets/img/pic2.jpeg",
+      "icon" : "../assets/img/iron-man1.png"
+    },
+    {
+      "name" : "thor",
+      "title" : "Thor",
+      "img" : "../assets/img/pic4.jpeg",
+      "icon" : "../assets/img/thor1.png"
+    }
+  ]
+}
+
+

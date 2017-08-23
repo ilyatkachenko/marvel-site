@@ -1,6 +1,8 @@
-import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
+import {Component, Input, OnInit, OnDestroy, Output, EventEmitter} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
-import { DataService } from "../data.service";
+import { HeroesService } from '../services/heroes/heroes.service';
+import {Heroes} from "../services/heroes/heroes.service";
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-sidebar',
@@ -43,14 +45,21 @@ import { DataService } from "../data.service";
         }))
       ])
     ])
-  ],
-  providers: [DataService]
+  ]
 })
-export class SidebarComponent implements OnInit {
 
-  constructor(private _navService:DataService) {}
+export class SidebarComponent implements OnInit {
+  observableHeroes: Observable<Heroes[]>;
+  heroes: Heroes[];
+  errorMessage: String;
+
+  constructor(private HeroesService: HeroesService) {}
+
   ngOnInit() {
-    let sideMenu = document.getElementById('side-menu').offsetWidth;
+    this.observableHeroes = this.HeroesService.getHeroesWithObservable();
+    this.observableHeroes.subscribe(
+        heroes => this.heroes = heroes,
+        error =>  this.errorMessage = <any>error);
   }
 
   @Input() count:string;

@@ -1,14 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild} from '@angular/core';
-import { DataService } from "../data.service";
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
-  providers: [DataService]
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  constructor(private _navService:DataService) {}
+  constructor() {}
 
   musicOn:boolean = true;
   musicOff:boolean = false;

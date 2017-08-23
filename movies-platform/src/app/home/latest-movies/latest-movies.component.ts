@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
-import { Http, Response } from '@angular/http';
-import 'rxjs/add/operator/toPromise';
+import { MoviesService } from '../../services/movies/movies.service';
+import {Movies} from "../../services/movies/movies.service";
 
 @Component({
   selector: 'app-latest-movies',
@@ -9,35 +9,17 @@ import 'rxjs/add/operator/toPromise';
   styleUrls: ['./latest-movies.component.scss']
 })
 export class LatestMoviesComponent implements OnInit {
-  url = "../assets/api/movies.json";
   promiseMovies: Promise<Movies[]>;
   movies: Movies[];
   errorMessage: String;
 
-  constructor(@Inject(DOCUMENT) private document: Document, private http:Http) { }
-
-  getMoviesWithPromise(): Promise<Movies[]> {
-    return this.http.get(this.url).toPromise()
-        .then(this.extractData)
-        .catch(this.handleErrorPromise);
-  }
-
-  private extractData(res: Response) {
-    let body = res.json();
-    return body;
-  }
-
-  private handleErrorPromise (error: Response | any) {
-    console.error(error.message || error);
-    return Promise.reject(error.message || error);
-  }
+  constructor(@Inject(DOCUMENT) private document: Document, private MoviesService: MoviesService) { }
 
   ngOnInit(): void {
-    this.promiseMovies = this.getMoviesWithPromise();
+    this.promiseMovies = this.MoviesService.getMoviesWithPromise();
     this.promiseMovies.then(
         movies => this.movies = movies,
         error =>  this.errorMessage = <any>error);
-    console.log(this.promiseMovies);
   }
 
   @HostListener("window:scroll", [])
@@ -50,12 +32,5 @@ export class LatestMoviesComponent implements OnInit {
         elements[i].classList.add('active');
       }
     }
-  }
-}
-
-export class Movies {
-  title: string;
-  movies: string;
-  constructor() {
   }
 }

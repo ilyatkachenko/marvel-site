@@ -3,11 +3,6 @@
     <span class="side-close__left"></span><span class="side-close__right"></span>
   </button>
   <nav>
-    <a routerLink="/" routerLinkActive="active" class="hawk"><img src="../assets/img/hawk1.png" alt="hawk"></a>
-    <a routerLink="/" routerLinkActive="active" class="hulk"><img src="../assets/img/hulk1.png" alt="hulk"></a>
-    <a routerLink="/" routerLinkActive="active" class="captain"><img src="../assets/img/captain1.png" alt="captain"></a>
-    <a routerLink="/" routerLinkActive="active" class="woman"><img src="../assets/img/woman1.png" alt="woman"></a>
-    <a routerLink="/" routerLinkActive="active" class="iron-man"><img src="../assets/img/iron-man1.png" alt="iron-man"></a>
-    <a routerLink="/" routerLinkActive="active" class="thor"><img src="../assets/img/thor1.png" alt="thor"></a>
+    <a *ngFor="let hero of observableHeroes | async" [routerLink]="['/hero', hero.name]" class="{{hero.name}}"><img src="{{hero.icon}}" alt="{{hero.name}}"></a>
   </nav>
 </aside>
