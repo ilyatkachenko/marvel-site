@@ -27,10 +27,10 @@ import { YoutubePipe } from './pipes/youtube/youtube.pipe';
 import { HeroComponent } from './hero/hero.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'comics', component: ComicsComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'videos', component: VideosComponent },
-  { path: '', component: HomeComponent },
   { path: 'hero/:name', component: HeroComponent },
   { path: '**', component: NotFoundComponent }
 ];

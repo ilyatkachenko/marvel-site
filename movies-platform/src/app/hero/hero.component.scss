@@ -1,0 +1,55 @@
+@mixin font($size:16px,$weight:400,$style:normal,$color:#000) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+  font-family: 'Oswald', sans-serif;
+}
+
+.banner{
+  display: block;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+
+  &__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+
+    &.hawk, &.captain, &.iron-man{
+      left: 0;
+      right: inherit;
+    }
+  }
+
+  &__text{
+    position: absolute;
+    top: 20%;
+    left: 20vw;
+    width: 30vw;
+    padding: 30px;
+    opacity: 0;
+
+    &.hawk, &.captain, &.iron-man{
+      right: 10vw;
+      left: inherit;
+    }
+  }
+
+  &__title{
+    display: block;
+    @include font(50px,400,normal,#fff);
+    margin: 0 0 15px;
+  }
+
+  &__desc{
+    display: block;
+    @include font(30px,400,normal,#fff);
+  }
+}

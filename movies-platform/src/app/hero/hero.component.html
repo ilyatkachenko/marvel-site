@@ -1,13 +1,56 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div *ngFor="let person of observableHeroes | async">
-        <div *ngIf="person.name == name">
-          <span>title: {{person.title}}</span>
-          <span>description: {{person.icon}}</span>
+<div *ngFor="let person of observableHeroes | async">
+    <div *ngIf="person.name == name">
+        <div class="banner">
+            <img src="{{person.img}}" alt="" class="banner__img {{person.name}}" [@fadeInBanner]="'in'">
+            <div class="banner__text {{person.name}}" [@fadeInUp]="'in'">
+                <h1 class="banner__title">{{person.title | uppercase}}</h1>
+                <span class="banner__desc">{{person.description}}</span>
+            </div>
         </div>
-      </div>
+        <div class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <table>
+                            <thead>Features :</thead>
+                            <tr>
+                                <td>Real Name:</td>
+                                <td>{{person.realName}}</td>
+                            </tr>
+                            <tr>
+                                <td>Height:</td>
+                                <td>{{person.height}}</td>
+                            </tr>
+                            <tr>
+                                <td>Weight:</td>
+                                <td>{{person.weight}}</td>
+                            </tr>
+                            <tr>
+                                <td>Powers:</td>
+                                <td>{{person.powers}}</td>
+                            </tr>
+                            <tr>
+                                <td>Abilities:</td>
+                                <td>{{person.abilities}}</td>
+                            </tr>
+                            <tr>
+                                <td>Group Affiliations:</td>
+                                <td>{{person.groupAffiliations}}</td>
+                            </tr>
+                            <tr>
+                                <td>First Appearance:</td>
+                                <td>{{person.firstAppearance}}</td>
+                            </tr>
+                            <tr>
+                                <td>Origin:</td>
+                                <td>{{person.origin}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+
 

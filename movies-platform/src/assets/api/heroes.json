@@ -3,38 +3,92 @@
     {
       "name" : "hawk",
       "title" : "Hawkeye",
-      "img" : "../assets/img/pic4.jpeg",
-      "icon" : "../assets/img/hawk1.png"
+      "img" : "../assets/img/pic44.png",
+      "icon" : "../assets/img/hawk1.png",
+      "description" : "Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony uses his money and intelligence to make the world a safer, better place as Iron Man.",
+      "realName" : "Anthony Edward 'Tony' Stark",
+      "height" : "6'1; (in armor) 6'6",
+      "weight" : "225 lbs.; (in armor) 425 lbs.",
+      "powers" : "None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently inaccessible and inoperable.",
+      "abilities" : "Tony has a genius level intellect that allows him to invent a wide range of sophisticated devices, specializing in advanced weapons and armor. He possesses a keen business mind.",
+      "groupAffiliations" : "The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati, Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous",
+      "firstAppearance" : "Tales of Suspense #39 (1963)",
+      "origin" : "Tales of Suspense #39 (1963)"
     },
     {
       "name" : "hulk",
       "title" : "Hulk",
-      "img" : "../assets/img/pic6.jpeg",
-      "icon" : "../assets/img/hulk1.png"
+      "img" : "../assets/img/pic6.png",
+      "icon" : "../assets/img/hulk1.png",
+      "description" : "Caught in a gamma bomb explosion while trying to save the life of a teenager, Dr. Bruce Banner was transformed into the incredibly powerful creature called the Hulk. An all too often misunderstood hero, the angrier the Hulk gets, the stronger the Hulk gets.",
+      "realName" : "Robert Bruce Banner",
+      "height" : "5' 9½' (Banner); 6'6' (gray Hulk); 7' – 8' (green/savageHulk); 7'6' (green/Professor Hulk)",
+      "weight" : "128 lbs. (Banner); 900 lbs. (gray Hulk); 1,040 – 1,400 lbs.(green/savage Hulk); 1,150 lbs. (green/Professor Hulk)",
+      "powers" : "The Hulk possesses an incredible level of superhuman physical ability. His capacity for physical strength is potentially limitless due to the fact that the Hulk's strength increases proportionally with his level of great emotional stress, anger in particular. The Hulk uses his superhumanly strong leg muscles to leap great distances. The Hulk has been known to cover hundreds of miles in a single bound and once leaped almost into orbit around the Earth. The Hulk can also use his superhumanly leg muscles to run at super speeds, although his legs have limitless strength he does not have limitless speed and once he reaches a certain speed his legs become too strong and destroy the ground giving him no friction to run on, therefore he jumps to travel. The Hulk can slam his hands together creating a shock wave, this shock wave can deafen people, send objects flying and extinguish fires. His thunderclap has been compared to hurricanes and sonic booms. The Hulk has shown a high resistance to physical damage nearly regardless of the cause, and has also shown resistance to extreme temperatures, mind control, nuclear explosions, poisons, and all diseases. In addition to the regeneration of limbs, vital organs, and damaged or destroyed areas of tissue at an amazing rate. The Hulk also has superhuman endurance.The Hulk's body also has a gland that makes an 'oxygenated per fluorocarbon emulsion', which creates pressure in the Hulk's lungs and effectively lets him breathe underwater and move quickly between varying depths without concerns about decompression or nitrogen narcosis.",
+      "abilities" : "Dr. Bruce Banner is a genius in nuclear physics, possessing a mind so brilliant that it cannot be measured on any known intelligence test. When Banner is the Hulk, Banner's consciousness is buried within the Hulk's, and can influence the Hulk's behavior only to a very limited extent",
+      "groupAffiliations" : "Formerly Avengers, Defenders, Fantastic Four, Pantheon, Horsemen of Apocalypse, Warbound",
+      "firstAppearance" : " Incredible Hulk #1 (1962)",
+      "origin" : " Incredible Hulk #1 (1962)"
     },
     {
       "name" : "captain",
       "title" : "Captain America",
-      "img" : "../assets/img/pic5.jpeg",
-      "icon" : "../assets/img/captain1.png"
+      "img" : "../assets/img/pic55.png",
+      "icon" : "../assets/img/captain1.png",
+      "description" : "Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army. Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty.",
+      "realName" : "Anthony Edward 'Tony' Stark",
+      "height" : "6'1; (in armor) 6'6",
+      "weight" : "225 lbs.; (in armor) 425 lbs.",
+      "powers" : "None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently inaccessible and inoperable.",
+      "abilities" : "Tony has a genius level intellect that allows him to invent a wide range of sophisticated devices, specializing in advanced weapons and armor. He possesses a keen business mind.",
+      "groupAffiliations" : "The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati, Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous",
+      "firstAppearance" : "Tales of Suspense #39 (1963)",
+      "origin" : "Tales of Suspense #39 (1963)"
     },
     {
       "name" : "black-widow",
       "title" : "Black Widow",
-      "img" : "../assets/img/pic1.jpeg",
-      "icon" : "../assets/img/woman1.png"
+      "img" : "../assets/img/pic11.png",
+      "icon" : "../assets/img/woman1.png",
+      "description" : "Natasha Romanova, known by many aliases, is an expert spy, athlete, and assassin. Trained at a young age by the KGB's infamous Red Room Academy, the Black Widow was formerly an enemy to the Avengers. She later became their ally after breaking out of the U.S.S.R.'s grasp, and also serves as a top S.H.I.E.L.D. agent.",
+      "realName" : "Anthony Edward 'Tony' Stark",
+      "height" : "6'1; (in armor) 6'6",
+      "weight" : "225 lbs.; (in armor) 425 lbs.",
+      "powers" : "None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently inaccessible and inoperable.",
+      "abilities" : "Tony has a genius level intellect that allows him to invent a wide range of sophisticated devices, specializing in advanced weapons and armor. He possesses a keen business mind.",
+      "groupAffiliations" : "The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati, Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous",
+      "firstAppearance" : "Tales of Suspense #39 (1963)",
+      "origin" : "Tales of Suspense #39 (1963)"
     },
     {
       "name" : "iron-man",
       "title" : "Iron man",
-      "img" : "../assets/img/pic2.jpeg",
-      "icon" : "../assets/img/iron-man1.png"
+      "img" : "../assets/img/pic22.png",
+      "icon" : "../assets/img/iron-man1.png",
+      "description" : "Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony uses his money and intelligence to make the world a safer, better place as Iron Man.",
+      "realName" : "Anthony Edward 'Tony' Stark",
+      "height" : "6'1; (in armor) 6'6",
+      "weight" : "225 lbs.; (in armor) 425 lbs.",
+      "powers" : "None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently inaccessible and inoperable.",
+      "abilities" : "Tony has a genius level intellect that allows him to invent a wide range of sophisticated devices, specializing in advanced weapons and armor. He possesses a keen business mind.",
+      "groupAffiliations" : "The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati, Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous",
+      "firstAppearance" : "Tales of Suspense #39 (1963)",
+      "origin" : "Tales of Suspense #39 (1963)"
     },
     {
       "name" : "thor",
       "title" : "Thor",
-      "img" : "../assets/img/pic4.jpeg",
-      "icon" : "../assets/img/thor1.png"
+      "img" : "../assets/img/pic33.png",
+      "icon" : "../assets/img/thor1.png",
+      "description" : "As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate. He's self-assured, and he would never, ever stop fighting for a worthwhile cause.",
+      "realName" : "Anthony Edward 'Tony' Stark",
+      "height" : "6'1; (in armor) 6'6",
+      "weight" : "225 lbs.; (in armor) 425 lbs.",
+      "powers" : "None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently inaccessible and inoperable.",
+      "abilities" : "Tony has a genius level intellect that allows him to invent a wide range of sophisticated devices, specializing in advanced weapons and armor. He possesses a keen business mind.",
+      "groupAffiliations" : "The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati, Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous",
+      "firstAppearance" : "Tales of Suspense #39 (1963)",
+      "origin" : "Tales of Suspense #39 (1963)"
     }
   ]
 }
