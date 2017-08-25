@@ -1,5 +1,5 @@
-<section id="banner" class="banner">
-  <div class="banner__text" [@fadeInUp]="'in'" *ngFor="let banner of promiseBanner | async">
+<section id="banner" class="banner" [@fadeInBanner]="'in'">
+  <div class="banner__text" *ngFor="let banner of promiseBanner | async">
     <h1 class="banner__title">{{banner.title}}</h1>
     <span class="banner__desc">{{banner.description}}</span>
   </div>

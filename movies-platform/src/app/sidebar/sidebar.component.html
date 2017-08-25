@@ -3,6 +3,6 @@
     <span class="side-close__left"></span><span class="side-close__right"></span>
   </button>
   <nav>
-    <a *ngFor="let hero of observableHeroes | async" [routerLink]="['/hero', hero.name]" class="{{hero.name}}"><img src="{{hero.icon}}" alt="{{hero.name}}"></a>
+    <a *ngFor="let hero of observableHeroes | async" [routerLink]="['/heroes', hero.name]" class="{{hero.name}}"><img src="{{hero.icon}}" alt="{{hero.name}}"></a>
   </nav>
 </aside>

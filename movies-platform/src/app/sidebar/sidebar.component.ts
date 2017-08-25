@@ -69,5 +69,11 @@ export class SidebarComponent implements OnInit {
   onNameChange(model: string){
     this.isActive = model;
     this.isActiveChange.emit(model);
+
+    let elOff: NodeListOf<Element> = document.getElementsByClassName("button-toggle");
+
+    if(model == 'off'){
+      elOff[0].classList.remove('active');
+    }
   }
 }

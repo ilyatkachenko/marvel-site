@@ -32,7 +32,7 @@
   position: relative;
   height: 800px;
   overflow: hidden;
-  background-image: url("../../../assets/img/bg.jpg");
+  background-image: url("../../../assets/img/heroes-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
@@ -44,8 +44,7 @@
     left: 20vw;
     width: 30vw;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   &__title{

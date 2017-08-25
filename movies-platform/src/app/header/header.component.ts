@@ -35,5 +35,11 @@ export class HeaderComponent implements OnInit {
   onNameChange(model: string){
     this.isActive = model;
     this.isActiveChange.emit(model);
+
+    let elOn: NodeListOf<Element> = document.getElementsByClassName("button-toggle");
+
+    if(model == 'on'){
+      elOn[0].classList.add('active');
+    }
   }
 }

@@ -6,7 +6,7 @@
   font-family: 'Oswald', sans-serif;
 }
 
-.banner{
+.banner {
   display: block;
   position: relative;
   height: 800px;
@@ -14,7 +14,7 @@
   background-color: #000;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 
-  &__img{
+  &__img {
     position: absolute;
     top: 0;
     right: 0;
@@ -22,34 +22,61 @@
     height: 100%;
     opacity: 0;
 
-    &.hawk, &.captain, &.iron-man{
+    &.hawk, &.captain, &.iron-man {
       left: 0;
       right: inherit;
     }
   }
 
-  &__text{
+  &__text {
     position: absolute;
-    top: 20%;
+    display: table;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     left: 20vw;
     width: 30vw;
     padding: 30px;
     opacity: 0;
 
-    &.hawk, &.captain, &.iron-man{
+    &.hawk, &.captain, &.iron-man {
       right: 10vw;
       left: inherit;
     }
   }
 
-  &__title{
+  &__title {
     display: block;
-    @include font(50px,400,normal,#fff);
+    @include font(50px, 400, normal, #fff);
     margin: 0 0 15px;
   }
 
-  &__desc{
+  &__desc {
     display: block;
-    @include font(30px,400,normal,#fff);
+    @include font(30px, 400, normal, #fff);
+  }
+}
+
+.features {
+  padding: 40px 0;
+
+  &__title {
+    @include font(30px, 600, normal, #000);
+    text-transform: uppercase;
+    width: 70%;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  table {
+    width: 70%;
+    margin: 0 auto;
+
+    td {
+      padding: 10px;
+      border: 1px solid #000;
+      line-height: 1.5;
+      vertical-align: middle;
+    }
   }
 }

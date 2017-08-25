@@ -11,7 +11,8 @@
                     <a routerLink="/comics" routerLinkActive="active" class="menu__item">comics</a>
                     <a routerLink="/movies" routerLinkActive="active" class="menu__item">movies</a>
                     <a routerLink="/videos" routerLinkActive="active" class="menu__item">videos</a>
-                    <button (click)="onNameChange('on')" id="characters" class="menu__item button main-btn"><span>heroes</span></button>
+                    <a routerLink="/heroes" routerLinkActive="active" class="menu__item">heroes</a>
+                    <button (click)="onNameChange('on')" id="characters" class="menu__item button-toggle"><span></span><span></span><span></span></button>
                 </nav>
                 <!--<audio #audioplayer src="../assets/img/music1.mp3" autoplay></audio>-->
                 <button id="turn-off" (click)="changeMusic(musicOff)" class="turn-off active"></button>

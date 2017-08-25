@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {trigger, state, style, transition, animate, keyframes} from '@angular/animations';
-import { HeroesService } from '../services/heroes/heroes.service';
-import {Heroes} from "../services/heroes/heroes.service";
+import { HeroesService } from '../../services/heroes/heroes.service';
+import {Heroes} from "../../services/heroes/heroes.service";
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import {Subscription} from 'rxjs/Subscription';

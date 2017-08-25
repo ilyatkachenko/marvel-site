@@ -24,14 +24,17 @@ import { LatestComicsComponent } from './home/latest-comics/latest-comics.compon
 import { LatestMoviesComponent } from './home/latest-movies/latest-movies.component';
 import { LatestVideosComponent } from './home/latest-videos/latest-videos.component';
 import { YoutubePipe } from './pipes/youtube/youtube.pipe';
-import { HeroComponent } from './hero/hero.component';
+import { HeroComponent } from './heroes/hero/hero.component';
+import { ChartModule } from 'angular-highcharts';
+import { HeroesComponent } from './heroes/heroes.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'comics', component: ComicsComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'videos', component: VideosComponent },
-  { path: 'hero/:name', component: HeroComponent },
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'heroes/:name', component: HeroComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -51,12 +54,14 @@ const appRoutes: Routes = [
     LatestMoviesComponent,
     LatestVideosComponent,
     YoutubePipe,
-    HeroComponent
+    HeroComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+    ChartModule,
     JsonpModule,
     ScrollToModule.forRoot(),
     RouterModule.forRoot(
