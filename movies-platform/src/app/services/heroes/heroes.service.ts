@@ -17,7 +17,6 @@ export class HeroesService {
 
   private extractData(res: Response) {
     let body = res.json().heroes;
-    console.log("ololo", body);
     return body;
   }
 

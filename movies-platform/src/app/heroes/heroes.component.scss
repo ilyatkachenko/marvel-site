@@ -46,5 +46,157 @@
     @include font(50px, 400, normal, #fff);
     text-align: center;
   }
+}
 
+.heroes{
+  padding: 50px 0;
+
+  .hero-wrap{
+    opacity: 0;
+    transform: skew(15deg) translateX(-100%);
+    transition: all 0.5s ease-in-out;
+
+    &.active{
+      transform: skew(15deg)  translateX(0);
+      opacity: 1;
+
+      &:nth-child(even){
+        transform: skew(-15deg)  translateX(0);
+      }
+    }
+
+    &:nth-child(even){
+      transform: skew(-15deg) translateX(100%);
+
+      .hero{
+        padding: 20px 20px 20px 80px;
+        flex-direction: row-reverse;
+
+        &__img, &__text{
+          transform: skew(15deg);
+        }
+      }
+    }
+  }
+
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 80px 20px 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-image: url("../../assets/img/comics-bg.gif");
+    background-repeat: repeat-y;
+    background-position: center bottom;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    &.hawk{
+      &:before {
+        content: '';
+        background-color: rgba(72, 129, 168, 0.25);
+      }
+    }
+
+    &.hulk{
+      &:before {
+        content: '';
+        background-color: rgba(125, 80, 160, 0.25);
+      }
+    }
+
+    &.captain{
+      &:before {
+        content: '';
+        background-color: rgba(85, 132, 196, 0.25);
+      }
+    }
+
+    &.black-widow{
+      &:before {
+        content: '';
+        background-color: rgba(64, 64, 65, 0.25);
+      }
+    }
+
+    &.iron-man{
+      &:before {
+        content: '';
+        background-color: rgba(245, 238, 49, 0.25);
+      }
+    }
+
+    &.thor{
+      &:before {
+        content: '';
+        background-color: rgba(48, 105, 165, 0.25);
+      }
+    }
+
+    &__img{
+      align-self: center;
+      z-index: 2;
+      width: 40%;
+      transform: skew(-15deg);
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      img{
+        height: 400px;
+        width: auto;
+      }
+    }
+
+    &__text{
+      align-self: center;
+      z-index: 2;
+      width: 60%;
+      transform: skew(-15deg);
+      position: relative;
+
+      &_title{
+        @include font(30px, 600, normal, #fff);
+        display: table;
+        margin: 0 auto 20px;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      &_description{
+        @include font(20px, 400, normal, #fff);
+        text-align: center;
+      }
+    }
+  }
+}
+
+.chart{
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  overflow: hidden;
+  background-image: url("../../assets/img/chart.jpg");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center top;
+
+  &:before {
+    content: '';
+    background-color: rgba(28, 60, 78, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer } from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
 
 @Component({
@@ -23,5 +23,9 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
   ]
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private renderer: Renderer) {}
+
+  onDeactivate() {
+    this.renderer.setElementProperty(document.body, "scrollTop", 0);
+  }
 }
