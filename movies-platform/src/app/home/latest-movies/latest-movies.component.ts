@@ -26,8 +26,8 @@ export class LatestMoviesComponent implements OnInit {
   onWindowScroll() {
     let comicsOffset:number = document.getElementById('latest-movies').offsetTop - 300;
     let elements: NodeListOf<Element> = document.getElementsByClassName("movie");
-    let number:number = this.document.body.scrollTop;
-    if (number > comicsOffset) {
+    let numberScroll:number = window.pageYOffset;
+    if (numberScroll > comicsOffset) {
       for (let i = 0; i < elements.length; ++i) {
         elements[i].classList.add('active');
       }

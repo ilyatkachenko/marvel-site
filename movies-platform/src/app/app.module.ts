@@ -27,6 +27,7 @@ import { YoutubePipe } from './pipes/youtube/youtube.pipe';
 import { HeroComponent } from './heroes/hero/hero.component';
 import { ChartModule } from 'angular-highcharts';
 import { HeroesComponent } from './heroes/heroes.component';
+import { ChartComponent } from './chart/chart.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -55,7 +56,8 @@ const appRoutes: Routes = [
     LatestVideosComponent,
     YoutubePipe,
     HeroComponent,
-    HeroesComponent
+    HeroesComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

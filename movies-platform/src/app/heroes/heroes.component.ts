@@ -5,7 +5,6 @@ import {Heroes} from "../services/heroes/heroes.service";
 import {Observable} from 'rxjs';
 import {DOCUMENT} from '@angular/platform-browser';
 import {Router} from '@angular/router';
-import {Chart} from 'angular-highcharts';
 
 @Component({
     selector: 'app-heroes',
@@ -37,6 +36,7 @@ import {Chart} from 'angular-highcharts';
 
 export class HeroesComponent implements OnInit {
     title: string = 'Heroes';
+    chartTitle: string = 'chart';
     observableHeroes: Observable<Heroes[]>;
     heroes: Heroes[];
     errorMessage: String;
@@ -58,79 +58,13 @@ export class HeroesComponent implements OnInit {
     @HostListener("window:scroll", [])
     onWindowScroll() {
         let elements: any = document.getElementsByClassName("hero-wrap");
-        let number: number = this.document.body.scrollTop;
+        let numberScroll: number = window.pageYOffset;
 
         for (let i = 0; i < elements.length; ++i) {
             let elementsOffset: number = elements[i].offsetTop - 300;
-            if (number > elementsOffset) {
+            if (numberScroll > elementsOffset) {
                 elements[i].classList.add('active');
             }
         }
     }
-
-    chart = new Chart({
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Heroes powers rating'
-        },
-        xAxis: {
-            categories: [
-                'Intelligence',
-                'Strength',
-                'Speed',
-                'Durability',
-                'Energy Projection',
-                'Fighting Skills'
-            ],
-            crosshair: true
-        },
-        yAxis: {
-            min: 0,
-            max: 7,
-            title: {
-                text: 'Rate'
-            }
-        },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: 'Hawkeye',
-            data: [3, 2, 2, 2, 1, 6]
-
-        }, {
-            name: 'Hulk',
-            data: [6, 7, 3, 7, 5, 4]
-
-        }, {
-            name: 'Captain America',
-            data: [3, 3, 2, 3, 1, 6]
-
-        }, {
-            name: 'Black Widow',
-            data: [3, 3, 2, 3, 3, 6]
-
-        }, {
-            name: 'Iron Man',
-            data: [6, 6, 5, 6, 6, 4]
-
-        }, {
-            name: 'Ihor',
-            data: [2, 7, 7, 6, 6, 4]
-
-        }]
-    });
 }

@@ -1,0 +1,15 @@
+<div class="chart">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <div *ngIf="chartName === 'chart'" [chart]="chart"></div>
+        <div *ngIf="chartName === 'hawk'" [chart]="hawk"></div>
+        <div *ngIf="chartName === 'hulk'" [chart]="hulk"></div>
+        <div *ngIf="chartName === 'captain'" [chart]="captain"></div>
+        <div *ngIf="chartName === 'black-widow'" [chart]="widow"></div>
+        <div *ngIf="chartName === 'iron-man'" [chart]="ironMan"></div>
+        <div *ngIf="chartName === 'thor'" [chart]="thor"></div>
+      </div>
+    </div>
+  </div>
+</div>
