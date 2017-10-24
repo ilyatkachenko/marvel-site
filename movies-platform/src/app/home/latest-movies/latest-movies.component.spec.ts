@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpModule } from '@angular/http';
+import { MoviesService } from '../../services/movies/movies.service';
 import { LatestMoviesComponent } from './latest-movies.component';
 
 describe('LatestMoviesComponent', () => {
@@ -8,7 +9,11 @@ describe('LatestMoviesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LatestMoviesComponent ]
+      declarations: [ LatestMoviesComponent ],
+      imports: [
+        HttpModule,
+      ],
+      providers: [MoviesService]
     })
     .compileComponents();
   }));

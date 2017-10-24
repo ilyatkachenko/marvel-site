@@ -23,6 +23,7 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
   ]
 })
 export class AppComponent {
+  title: string = 'app';
   constructor(private renderer: Renderer) {}
 
   onDeactivate() {

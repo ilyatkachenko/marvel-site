@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { BannerService } from '../../services/banner/banner.service';
+import { HttpModule } from '@angular/http';
 import { BannerComponent } from './banner.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('BannerComponent', () => {
   let component: BannerComponent;
@@ -8,7 +10,12 @@ describe('BannerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BannerComponent ]
+      declarations: [ BannerComponent ],
+      imports: [
+        HttpModule,
+        BrowserAnimationsModule
+      ],
+      providers: [BannerService]
     })
     .compileComponents();
   }));

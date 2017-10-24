@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ScrollToModule} from 'ng2-scroll-to';
+import { AppRoutingModule } from './app-routing.module';
+import { SidebarModule } from './sidebar/sidebar.module';
 
 import { ComicsService } from './services/comics/comics.service';
 import { BannerService } from './services/banner/banner.service';
 import { MoviesService } from './services/movies/movies.service';
-import { HeroesService } from './services/heroes/heroes.service';
 
 import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from './app.component';
@@ -18,7 +18,6 @@ import { ComicsComponent } from './comics/comics.component';
 import { MoviesComponent } from './movies/movies.component';
 import { VideosComponent } from './videos/videos.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { BannerComponent } from './home/banner/banner.component';
 import { LatestComicsComponent } from './home/latest-comics/latest-comics.component';
 import { LatestMoviesComponent } from './home/latest-movies/latest-movies.component';
@@ -28,16 +27,6 @@ import { HeroComponent } from './heroes/hero/hero.component';
 import { ChartModule } from 'angular-highcharts';
 import { HeroesComponent } from './heroes/heroes.component';
 import { ChartComponent } from './chart/chart.component';
-
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'comics', component: ComicsComponent },
-  { path: 'movies', component: MoviesComponent },
-  { path: 'videos', component: VideosComponent },
-  { path: 'heroes', component: HeroesComponent },
-  { path: 'heroes/:name', component: HeroComponent },
-  { path: '**', component: NotFoundComponent }
-];
 
 @NgModule({
   declarations: [
@@ -49,7 +38,6 @@ const appRoutes: Routes = [
     MoviesComponent,
     VideosComponent,
     NotFoundComponent,
-    SidebarComponent,
     BannerComponent,
     LatestComicsComponent,
     LatestMoviesComponent,
@@ -66,12 +54,10 @@ const appRoutes: Routes = [
     ChartModule,
     JsonpModule,
     ScrollToModule.forRoot(),
-    RouterModule.forRoot(
-        appRoutes,
-        { enableTracing: true } // <-- debugging purposes only
-    )
+    AppRoutingModule,
+    SidebarModule
   ],
-  providers: [ComicsService,BannerService,MoviesService,HeroesService],
+  providers: [ComicsService,BannerService,MoviesService,YoutubePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -1,11 +1,14 @@
 import { TestBed, inject } from '@angular/core/testing';
-
+import { HttpModule } from '@angular/http';
 import { BannerService } from './banner.service';
 
 describe('BannerService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [BannerService]
+      providers: [BannerService],
+      imports: [
+        HttpModule,
+      ],
     });
   });
 

@@ -1,8 +1,10 @@
 import { YoutubePipe } from './youtube.pipe';
+import { DomSanitizer, ɵe as DomSanitizerImpl } from "@angular/platform-browser";
 
 describe('YoutubePipe', () => {
   it('create an instance', () => {
-    const pipe = new YoutubePipe();
+    let sanitizer: DomSanitizer = new DomSanitizerImpl(null);
+    const pipe = new YoutubePipe(sanitizer);
     expect(pipe).toBeTruthy();
   });
 });
