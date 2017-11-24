@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="d17a05d3-6d0f-46e8-9320-09ef8e004ad8" name="Default" comment="Marvel site">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movies-platform/src/assets/img/loading.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movies-platform/src/assets/img/Thumbs.db" afterPath="$PROJECT_DIR$/movies-platform/src/assets/img/Thumbs.db" />
@@ -21,11 +22,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movies-platform/src/styles.scss" afterPath="$PROJECT_DIR$/movies-platform/src/styles.scss" />
     </list>
 =======
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
     <list default="true" id="0bdce23c-7e15-4428-8ce5-a5b0e8fddc9e" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/marvel-site.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movies-platform/src/app/chart/chart.component.scss" afterPath="$PROJECT_DIR$/movies-platform/src/app/chart/chart.component.scss" />
     </list>
     <ignored path=".idea/modules.xml" />
+<<<<<<< HEAD
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
+=======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +43,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="chart.component.scss" pinned="false" current-in-tab="false">
+=======
+    <leaf>
+      <file leaf-file-name="chart.component.scss" pinned="false" current-in-tab="true">
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
 =======
     <leaf>
       <file leaf-file-name="chart.component.scss" pinned="false" current-in-tab="true">
@@ -52,6 +63,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -86,11 +98,17 @@
   </component>
   <component name="Git.Settings">
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
+=======
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/movies-platform/src/app/home/latest-movies/latest-movies.component.html" />
         <option value="$PROJECT_DIR$/movies-platform/src/app/home/banner/banner.component.html" />
@@ -146,6 +164,9 @@
 =======
         <option value="$PROJECT_DIR$/movies-platform/src/app/chart/chart.component.scss" />
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
+=======
+        <option value="$PROJECT_DIR$/movies-platform/src/app/chart/chart.component.scss" />
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
       </list>
     </option>
   </component>
@@ -156,9 +177,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/movies-platform/node_modules" />
   </component>
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
 =======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
@@ -183,6 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
@@ -457,6 +482,8 @@
       <recent name="C:\Users\Ilya\Desktop\marvel-site\marvel-site\movies-platform\src\app\services\heroes" />
     </key>
 =======
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
       <pane id="Scope" />
       <pane id="ProjectPane" />
       <pane id="Scratches" />
@@ -466,6 +493,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+<<<<<<< HEAD
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
+=======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
   </component>
   <component name="RunDashboard">
@@ -480,6 +510,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="RunManager">
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -552,11 +583,14 @@
   </component>
 =======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <changelist id="d17a05d3-6d0f-46e8-9320-09ef8e004ad8" name="Default" comment="" />
       <created>1501755429976</created>
@@ -689,6 +723,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 =======
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
       <changelist id="0bdce23c-7e15-4428-8ce5-a5b0e8fddc9e" name="Default" comment="" />
       <created>1511511171980</created>
       <option name="number" value="Default" />
@@ -720,6 +756,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
+=======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -731,10 +770,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Marvel site" />
     <option name="LAST_COMMIT_MESSAGE" value="Marvel site" />
   </component>
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
 =======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
   <component name="XDebuggerManager">
@@ -742,6 +784,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/movies-platform/src/app/sidebar/sidebar.module.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1063,6 +1106,8 @@
     </entry>
 =======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
     <entry file="file://$PROJECT_DIR$/movies-platform/src/app/chart/chart.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1072,6 +1117,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1080,6 +1126,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
 =======
 >>>>>>> 15347497beaf2ea62686b204ee793f594872eb73
   </component>
