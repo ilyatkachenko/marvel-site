@@ -1,3 +1,19 @@
-<p>
-  comics works!
-</p>
+<div class="banner" [@fadeInBanner]="'in'">
+  <div class="banner__text">
+    <h1 class="banner__title">{{title | uppercase}}</h1>
+  </div>
+</div>
+<section class="latest-comics" id="latest-comics">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-xs-12 comics-wrap" *ngFor="let element of (promiseComics | async)?.comics; let index = index" [class.active]="index < 3">
+        <a href="#">
+          <div class="comics">
+            <h3 class="comics__title">{{element.title}}</h3>
+            <img src="{{element.img}}" alt="" class="comics__img">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

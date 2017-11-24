@@ -45,7 +45,7 @@ import { ChartComponent } from './chart/chart.component';
     YoutubePipe,
     HeroComponent,
     HeroesComponent,
-    ChartComponent
+    ChartComponent,
   ],
   imports: [
     BrowserModule,

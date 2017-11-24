@@ -6,11 +6,47 @@
   ],
   "comics": [
     {
-      "title": "Avengers Assemble #08: Spring Break (Part 3):",
+      "title": "Avengers Assemble #01",
       "img": "../assets/img/comics1.jpeg"
     },
     {
       "title": "Avengers Assemble #02",
+      "img": "../assets/img/comics2.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #03",
+      "img": "../assets/img/comics3.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #04",
+      "img": "../assets/img/comics1.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #05",
+      "img": "../assets/img/comics2.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #06",
+      "img": "../assets/img/comics3.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #07",
+      "img": "../assets/img/comics1.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #08",
+      "img": "../assets/img/comics2.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #09",
+      "img": "../assets/img/comics3.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #10",
+      "img": "../assets/img/comics1.jpeg"
+    },
+    {
+      "title": "Avengers Assemble #11",
       "img": "../assets/img/comics2.jpeg"
     },
     {
