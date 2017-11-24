@@ -1,6 +1,6 @@
 <app-sidebar [(isActive)]="isActive" [count]="isActive"></app-sidebar>
 <app-header [(isActive)]="isActive"></app-header>
 <div class="wrapper" [@slideInOut]="isActive">
-    <router-outlet (deactivate)="onDeactivate()"></router-outlet>
+    <router-outlet></router-outlet>
     <app-footer></app-footer>
 </div>

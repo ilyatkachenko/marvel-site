@@ -1,5 +1,6 @@
-import { Component, Renderer } from '@angular/core';
+import { Component, Renderer, OnInit } from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -22,11 +23,17 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
     ]),
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title: string = 'app';
-  constructor(private renderer: Renderer) {}
+  isActive: string;
+  constructor(private renderer: Renderer, private router: Router) {}
 
-  onDeactivate() {
-    this.renderer.setElementProperty(document.body, "scrollTop", 0);
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 }
